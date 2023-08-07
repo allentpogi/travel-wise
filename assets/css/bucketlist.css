@@ -1,0 +1,220 @@
+/* sets the root colours for the bucketlist css */
+:root {
+  --dark: #07434e;
+  --light: #769fa0;
+  --green: #d6cd28;
+}
+/* sets the properties for the body element */
+body {
+  background-image: radial-gradient(var(--dark) 0.5px, whitesmoke.5px);
+  background-size: 10px 10px;
+  background-color: whitesmoke;
+  font-family: "Kanit", sans-serif;
+  flex: 1;
+  margin: auto 0;
+  height: 100vh;
+  overflow-y: scroll;
+}
+/* sets the colour for the .fa id */
+.fa {
+  color: var(--green);
+}
+
+/* sets the properties for the sidebar id */
+.sidebar {
+  text-align: center;
+  margin-top: 0.5em;
+  width: 0;
+  height: 10%;
+  background-color: whitesmoke;
+  border: 0.05em solid var(--dark);
+  transition: 1s ease;
+  position: fixed;
+  z-index: 1;
+  padding-top: 1.8em;
+}
+/* sets the properties for the button-link class */
+.button-link {
+  font-family: "Kanit", sans-serif;
+  font-size: 1.2em;
+  width: 0;
+  height: 0;
+  margin-bottom: 0.5em;
+  color: var(--green);
+  border: none;
+  border-radius: 1em;
+  transition-delay: 0.2s;
+  transition: 0.6s;
+}
+
+/* sets the cursor when hovering over the link button */
+.button-link-visible {
+  background-color: var(--dark);
+  cursor: pointer;
+  width: 10em;
+  height: 2em;
+}
+
+.button-link-visible:hover {
+  background-color: var(--light);
+  cursor: pointer;
+}
+
+/* sets the width of the sidebar id */
+.sidebar-large {
+  width: 17em;
+}
+/* sets the properties for the side-btn class */
+
+.fa-plus {
+  color: var(--dark);
+  font-size: larger;
+}
+
+#side-btn {
+  position: absolute;
+  border: none;
+  height: 80px;
+  width: 80px;
+  border: 0.4em solid var(--green);
+  border-radius: 50%;
+  box-shadow: 0px 1px 4px 1px rgba(0, 0, 0, 0.3);
+  left: 100%;
+  top: 0.6em;
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+
+/* sets the properties for the header element */
+header {
+  display: flex;
+  justify-content: center;
+  background-color: var(--dark);
+  color: whitesmoke;
+  width: 100%;
+  text-align: center;
+  padding: 0;
+  margin-bottom: 1em;
+  font-size: 1.5em;
+  border-bottom: 0.25em solid var(--green);
+}
+
+/* sets the text for the container id to center */
+.container {
+  text-align: center;
+}
+/* sets the properties for the submit.search id button */
+.submit-search {
+  background-color: var(--green);
+  margin: 2em 1.5em;
+  border: 0.06em solid var(--dark);
+  /* border-radius: 0.5em; */
+  padding: 1.5em;
+  box-shadow: 0px 0px 20px #888888;
+}
+/* sets the properties for the myCity class */
+#myCity {
+  width: 90%;
+  height: 3em;
+  margin-bottom: 0.5em;
+  font-size: 1em;
+  text-align: center;
+  border: 0.01em solid var(--dark);
+  border-radius: 2em;
+  font-family: "Kanit", sans-serif;
+  box-shadow: 1px 2px 10px #847f26;
+}
+/* sets the properties for the submit class */
+#submit {
+  background-color: var(--light);
+  padding: 0.3em 2em;
+  border: 0.05em solid var(--dark);
+  border-radius: 2em;
+  color: #053138;
+  font-family: "Kanit", sans-serif;
+  font-size: 1em;
+  box-shadow: 2px 3px 10px #847f26;
+}
+/* sets what happens when the user hovers over the submit button */
+#submit:hover {
+  background-color: var(--dark);
+  color: whitesmoke;
+  cursor: pointer;
+}
+/* sets the properties for the h2 in the bucketlist html */
+h2 {
+  color: var(--dark);
+  background-color: var(--light);
+  font-size: 2.3em;
+  padding: 0.1em;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+/* sets the properties for the bucket list container class */
+#bucket-list-container {
+  margin: 1.5em;
+  background-color: whitesmoke;
+  padding-bottom: 0.2em;
+  box-shadow: 3px 3px 20px #888888;
+  display: flex;
+  flex-direction: column;
+  min-height: 30em;
+  height: 200%;
+}
+
+.listItems {
+  border-bottom: 0.1em solid var(--light);
+  margin: 0.2em auto;
+  padding: 0.3em;
+}
+
+.btn {
+  text-align: start;
+  text-decoration: none;
+  font-size: 1.5em;
+  color: var(--dark);
+}
+
+.btn:hover {
+  text-align: start;
+  text-decoration: none;
+  font-size: 1.5em;
+  color: var(--dark);
+}
+
+.remove-btn {
+  background-color: var(--dark);
+  color: whitesmoke;
+  border: none;
+  font-family: "Kanit", sans-serif;
+}
+
+.remove-btn:hover {
+  background-color: var(--light);
+  cursor: pointer;
+}
+
+.checkbox {
+  width: 2.5em;
+  height: 2.5em;
+}
+
+.checkbox:checked {
+  color: var(--green);
+}
+
+/* sets the properties for the footer element */
+footer {
+  background-color: var(--dark);
+  height: 3em;
+  text-align: center;
+  color: var(--light);
+  margin-bottom: 0;
+}
+/* makes the page responsive */
+@media (min-width: 768px) {
+  .submit-search {
+    margin: auto;
+    width: 40%;
+  }
+}

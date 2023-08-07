@@ -1,0 +1,363 @@
+/* To style destinations.html page */
+/* Sets the root for dark, light and green colours */
+/* sets the root colours for the home.css */
+:root {
+  --dark: #07434e;
+  --light: #769fa0;
+  --green: #d6cd28;
+}
+/* sets the properties for the body element */
+body {
+  background-image: radial-gradient(var(--dark) 0.5px, whitesmoke.5px);
+  background-size: 10px 10px;
+  background-color: whitesmoke;
+  font-family: "Kanit", sans-serif;
+  flex: 1;
+  margin: auto 0;
+  height: 100vh;
+  overflow-y: scroll;
+}
+/* sets the colour for .fa */
+.fa {
+  color: var(--green);
+}
+/* sets the colour for .fa-plus */
+.fa-plus {
+  color: var(--dark);
+}
+
+/* sets the properties for the sidebar class */
+.sidebar {
+  margin-top: 0.5em;
+  width: 0;
+  height: 18%;
+  background-color: whitesmoke;
+  border: 0.05em solid var(--dark);
+  transition: 1s ease;
+  position: fixed;
+  z-index: 1;
+  padding-top: 1.8em;
+}
+
+/* sets the properties for the button-link class */
+.button-link {
+  font-family: "Kanit", sans-serif;
+  font-size: 1.2em;
+  width: 0;
+  height: 0;
+  margin-bottom: 0.5em;
+  margin-left: 0.5em;
+  color: var(--green);
+  border: none;
+  border-radius: 1em;
+  transition-delay: 0.2s;
+  transition: 0.6s;
+}
+
+/* sets the cursor when hovering over the link button */
+.button-link-visible {
+  background-color: var(--dark);
+  cursor: pointer;
+  width: 10em;
+  height: 2em;
+}
+
+.button-link-visible:hover {
+  background-color: var(--light);
+  cursor: pointer;
+}
+
+/* sets the width of the sidebar id */
+.sidebar-large {
+  width: 17em;
+}
+/* sets the properties for the side-btn class */
+
+#side-btn {
+  position: absolute;
+  border: none;
+  height: 80px;
+  width: 80px;
+  border: 0.4em solid var(--green);
+  border-radius: 50%;
+  box-shadow: 0px 1px 4px 1px rgba(0, 0, 0, 0.3);
+  left: 100%;
+  top: 2.2em;
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+/* sets the properties for the header element */
+header {
+  display: flex;
+  justify-content: center;
+  background-color: var(--dark);
+  color: whitesmoke;
+  width: 100%;
+  text-align: center;
+  padding: 0;
+  margin-bottom: 1em;
+  font-size: 1.5em;
+  border-bottom: 0.25em solid var(--green);
+}
+
+/* sets the .fa plane to the green colour variable */
+.fa-plane {
+  color: var(--green);
+}
+
+/* sets the properties for the destination name container */
+.destination-name-container {
+  background-color: var(--light);
+  margin: 0 1em 2em 1em;
+  padding: 0.1em auto;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+  background-color: var(--light);
+  cursor: pointer;
+}
+
+/* sets the properties for the destination name */
+.destination-name {
+  font-size: 2.5em;
+  color: var(--dark);
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* sets the text in the desination container to center */
+.destination-content-container {
+  text-align: center;
+  margin-top: 1em;
+}
+
+/* sets the size and border of the city map id */
+#map {
+  height: 17em;
+  margin: 0 1em 2em 1em;
+  border: 0.2em solid var(--dark);
+  box-shadow: 0px 0px 30px #a6a5a5;
+}
+/* sets the propeties for the text in city description */
+.city-description {
+  display: flex;
+  background-color: whitesmoke;
+  color: var(--dark);
+  margin: 0.5em 1em;
+  border: 0.2em solid var(--green);
+  box-shadow: 0px 0px 20px #a6a5a5;
+}
+/* sets the padding and text allignment for the desctription text */
+#description {
+  text-align: justify;
+  padding: 0.4em;
+  width: 100%;
+}
+
+.small-cards {
+  display: flex;
+  margin: 1em;
+}
+
+.city-time {
+  margin: 1em 0;
+  margin-right: 0.2em;
+  width: 10em;
+  flex: 1 1 5em;
+  height: 9em;
+  background-color: var(--green);
+  color: var(--dark);
+  box-shadow: 0px 0px 20px #737373;
+}
+
+.city-time h3 {
+  text-align: center;
+  font-size: 1.6em;
+  color: var(--dark);
+  margin-top: 0.2em;
+  text-decoration: underline;
+}
+
+#timeZone {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+/* sets the properties for the currency block */
+.currency-block {
+  margin: 1em 0;
+  width: 10em;
+  margin-left: 0.2em;
+  flex: 1 1 5em;
+  height: 9em;
+  background-color: var(--dark);
+  box-shadow: 0px 0px 20px #737373;
+}
+/* sets the text size for the h3 in the currency container */
+#currency-data h3 {
+  text-align: center;
+  font-size: 1.6em;
+  color: whitesmoke;
+  margin-top: 0.2em;
+  text-decoration: underline;
+}
+
+.currency-container {
+  font-size: 1.5em;
+  text-align: center;
+  color: whitesmoke;
+}
+
+/* sets the properties for the weather block */
+.weather-block {
+  margin: 1em 1em 2em 1em;
+  display: flex;
+  text-align: center;
+  background-color: var(--light);
+  box-shadow: 0px 0px 20px #737373;
+  padding: 0.2em;
+}
+/* sets the properties for the weather container */
+#weather-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex: 1 1 2em;
+}
+/* sets the properties for the weather card */
+#weather-card {
+  flex: 1 1 2%;
+  flex-wrap: wrap;
+  display: inline-block;
+  width: 10em;
+  margin: 0.3em;
+  border: 0.2em solid var(--dark);
+  padding-bottom: 1em;
+}
+/* sets the margin for p in the weather card */
+#weather-card p {
+  margin: 0.2em;
+}
+/* styling for the images in the weather card */
+#weather-card img {
+  margin: 0;
+  padding: 0;
+}
+/* sets the properties for the date header */
+#date-header {
+  background-color: var(--dark);
+  color: var(--green);
+  margin: 0.5em 0.4em;
+  border-radius: 1em;
+}
+/* sets the properties for the business container */
+#businesses-container {
+  margin: 1em;
+  background-color: var(--dark);
+  box-shadow: 0px 0px 20px #737373;
+  padding-top: 1em;
+  padding-bottom: 2em;
+}
+/* sets the text styling for h3 in the business container */
+#businesses-container h3 {
+  justify-content: center;
+  font-size: 2em;
+  color: var(--green);
+  margin: 0;
+}
+/* sets the properties for the businesses id */
+#businesses {
+  justify-content: space-evenly;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: start;
+  flex: 1 1 20em;
+}
+/* sets the properties for the business card id */
+.businessCard {
+  cursor: pointer;
+  text-decoration: none;
+  height: 30em;
+  width: 21em;
+  background-color: whitesmoke;
+  color: var(--dark);
+  margin: 0 0.5em;
+  justify-self: center;
+  text-align: center;
+}
+/* sets the margin for the p in the businessCard id */
+.businessCard p {
+  margin: 0.2em;
+}
+/* sets the properties for the rec-name id */
+.rec-name {
+  text-align: center;
+  background-color: var(--green);
+  color: var(--dark);
+  font-size: 1.25em;
+  height: 3em;
+  padding-top: 0.5em;
+}
+/* sets the properties for the link-to-destination id */
+.link-to-destination {
+  font-size: 1em;
+  color: whitesmoke;
+  text-decoration: none;
+}
+/* sets hte properties for the bucketlist-btn class */
+#bucketlist-btn {
+  background-color: var(--green);
+  border: 0.3em solid var(--dark);
+  border-radius: 3em;
+  padding: 1em 4em;
+  font-size: 1.3em;
+  margin: 1em auto 2em;
+}
+/* sets the colour for the bucketlist-btn class .fa */
+#bucketlist-btn .fa {
+  color: var(--dark);
+}
+/* sets the properties for what happens when the user hovers over the bucketlist-btn class */
+#bucketlist-btn:hover {
+  background-color: var(--light);
+  color: var(--dark);
+  cursor: pointer;
+}
+/* sets the display for the dialog-success class */
+#dialog-success {
+  display: none;
+}
+/* sets the display for the dialog-fail class */
+#dialog-fail {
+  display: none;
+}
+/* sets the properties for the footer element */
+footer {
+  background-color: var(--dark);
+  height: 3em;
+  text-align: center;
+  color: var(--light);
+
+}
+/* makes the website responsive */
+@media (min-width: 768px) {
+  .businessCard {
+    height: 30em;
+    width: 20em;
+  }
+
+}
+/* makes the website responsive */
+@media (min-width: 992px) {
+  .businessCard {
+    height: 30em;
+    width: 14em;
+  }
+
+  .businessCard #image {
+    width: 85%;
+    height: 11em;
+    margin: auto;
+  }
+ 
+  }
+  

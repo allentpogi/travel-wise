@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Links to css stylesheets-->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css" />
+    <link rel="stylesheet" href="./assets/css/home.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit&display=swap"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <title>Travel Wise</title>
+
+</head>
+<body>
+  <!-- div for sidebar -->
+  <div class="side-container">
+    <div class="sidebar">
+      <button class="button-link" id="bucket-link"></button>
+      <!-- <a href="./bucketlist.html" id="bucket-link"></a> -->
+      <button id="side-btn">
+        <i class="fa fa-plus fa-3x" aria-hidden="true"></i>
+      </button>
+    </div> 
+  </div>
+  <!-- div for main page content-->
+  <div class="main-content">
+    <header>
+      <!-- Website name-->
+      <h1>
+        Travel Wise
+        <i class="fa fa-plane" aria-hidden="true"></i>
+      </h1>
+    </header>
+  </div>
+
+
+  <!-- div for container; search bar and button-->
+    <div class="container">
+      <div class="ui-widget submit-search">
+        <label for="myCity"></label>
+        <input id="myCity" placeholder="Search for a City" />
+        <button id="submit" type="button">Search</button>
+      </div>
+
+    <!-- A container for all the top pick destinations card -->
+
+  <section class ="top-cities">
+    <h2>Our Top Picks</h2>
+    <div class="city-cards">
+      
+      <!-- Back arrow button: to go back to the previous top pick destination -->
+      <button class="slide-arrow" id="prev-btn">
+        <i class="fa fa-arrow-left" aria-hidden="true"></i>
+      </button>
+
+
+        <!-- Front arrow button: to go to the next top pick destination  -->
+        <button class="slide-arrow" id="next-btn">
+          <i class="fa fa-arrow-right" aria-hidden="true"></i>
+        </button>
+        <!-- div for carousel -->
+        <div class="city-cards-carousel"></div>
+
+
+    </div>
+    </section>
+  </div>
+  
+  <!-- Page footer -->
+         
+<footer>Travel Wise 2023</footer>
+  
+    <!-- linking javascript files to html -->
+    <script src="./assets/js/home.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="./assets/js/cities.js"></script>
+  </body>
+</html>
